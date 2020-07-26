@@ -15,7 +15,7 @@ namespace SisVentas
         public Form1()
         {
             InitializeComponent();
-            //hola
+            //hola1
         }
     }
 }
