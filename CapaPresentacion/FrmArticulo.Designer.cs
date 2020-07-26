@@ -116,13 +116,15 @@
             this.dataListado.AllowUserToOrderColumns = true;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataListado.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataListado.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataListado.ColumnHeadersVisible = false;
             this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
+            this.dataListado.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataListado.GridColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dataListado.Location = new System.Drawing.Point(14, 143);
+            this.dataListado.Location = new System.Drawing.Point(3, 3);
             this.dataListado.MultiSelect = false;
             this.dataListado.Name = "dataListado";
             this.dataListado.ReadOnly = true;
@@ -130,7 +132,7 @@
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             this.dataListado.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(800, 280);
+            this.dataListado.Size = new System.Drawing.Size(1023, 475);
             this.dataListado.TabIndex = 7;
             this.dataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListado_CellContentClick);
             this.dataListado.DoubleClick += new System.EventHandler(this.dataListado_DoubleClick);

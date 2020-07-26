@@ -80,8 +80,6 @@
             this.label9 = new System.Windows.Forms.Label();
             this.dtFecha2 = new System.Windows.Forms.DateTimePicker();
             this.dtFecha1 = new System.Windows.Forms.DateTimePicker();
-            this.dataListado = new System.Windows.Forms.DataGridView();
-            this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.lblTotal = new System.Windows.Forms.Label();
             this.chkEliminar = new System.Windows.Forms.CheckBox();
             this.btnImprimir = new System.Windows.Forms.Button();
@@ -90,6 +88,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ttMensaje = new System.Windows.Forms.ToolTip(this.components);
+            this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataListado = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -593,30 +593,6 @@
             this.dtFecha1.Size = new System.Drawing.Size(103, 26);
             this.dtFecha1.TabIndex = 8;
             // 
-            // dataListado
-            // 
-            this.dataListado.AllowUserToAddRows = false;
-            this.dataListado.AllowUserToDeleteRows = false;
-            this.dataListado.AllowUserToOrderColumns = true;
-            this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Eliminar});
-            this.dataListado.Location = new System.Drawing.Point(14, 143);
-            this.dataListado.MultiSelect = false;
-            this.dataListado.Name = "dataListado";
-            this.dataListado.ReadOnly = true;
-            this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListado.Size = new System.Drawing.Size(1135, 398);
-            this.dataListado.TabIndex = 7;
-            this.dataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListado_CellContentClick);
-            this.dataListado.DoubleClick += new System.EventHandler(this.dataListado_DoubleClick);
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.ReadOnly = true;
-            // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
@@ -699,11 +675,37 @@
             // 
             this.ttMensaje.IsBalloon = true;
             // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            // 
+            // dataListado
+            // 
+            this.dataListado.AllowUserToAddRows = false;
+            this.dataListado.AllowUserToDeleteRows = false;
+            this.dataListado.AllowUserToOrderColumns = true;
+            this.dataListado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Eliminar});
+            this.dataListado.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataListado.Location = new System.Drawing.Point(3, 3);
+            this.dataListado.MultiSelect = false;
+            this.dataListado.Name = "dataListado";
+            this.dataListado.ReadOnly = true;
+            this.dataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataListado.Size = new System.Drawing.Size(1001, 548);
+            this.dataListado.TabIndex = 7;
+            this.dataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListado_CellContentClick);
+            this.dataListado.DoubleClick += new System.EventHandler(this.dataListado_DoubleClick);
+            // 
             // FrmVenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1029, 637);
+            this.ClientSize = new System.Drawing.Size(833, 398);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
             this.Name = "FrmVenta";
@@ -741,8 +743,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DateTimePicker dtFecha2;
         private System.Windows.Forms.DateTimePicker dtFecha1;
-        private System.Windows.Forms.DataGridView dataListado;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.CheckBox chkEliminar;
         private System.Windows.Forms.Button btnImprimir;
@@ -788,5 +788,7 @@
         private System.Windows.Forms.TextBox txtDescuento;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.TextBox txtStock_Actual;
+        private System.Windows.Forms.DataGridView dataListado;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
     }
 }
